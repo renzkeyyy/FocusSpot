@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Spot - Headquarters Iligan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="place.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header -->
+        <header class="top-nav">
+            <a href="homepage.html" class="back-button" aria-label="Go back">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8267 9.99584H4.16493" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.99584 15.8292L4.16251 9.99584L9.99584 4.16251" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </header>
+
+        <main class="content">
+            <!-- Hero Image -->
+            <div class="hero-image-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTfAEsvpbJuGCvbxRGsvVb_XOghJdwu9KtA&s" alt="Headquarters Iligan" class="hero-img">
+            </div>
+
+            <!-- Place Info -->
+            <section class="place-info">
+                <h1 class="place-title">Headquarters Iligan</h1>
+                
+                <div class="place-location">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.8333 5.41667C10.8333 9.20833 6.5 12.4583 6.5 12.4583C6.5 12.4583 2.16666 9.20833 2.16666 5.41667C2.16666 4.2674 2.6232 3.1652 3.43586 2.35254C4.24852 1.53988 5.35073 1.08334 6.5 1.08334C7.64927 1.08334 8.75148 1.53988 9.56414 2.35254C10.3768 3.1652 10.8333 4.2674 10.8333 5.41667Z" stroke="#9B8674" stroke-width="1.33278" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.5 7.04167C7.39746 7.04167 8.125 6.31413 8.125 5.41667C8.125 4.51921 7.39746 3.79167 6.5 3.79167C5.60254 3.79167 4.875 4.51921 4.875 5.41667C4.875 6.31413 5.60254 7.04167 6.5 7.04167Z" stroke="#9B8674" stroke-width="1.33278" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>2nd Floor, Consunji Bldg, Iligan City</span>
+                </div>
+
+                <p class="place-description">Co-working space ideal for freelancers and students. Offers high-speed internet and free-flowing coffee.</p>
+
+                <div class="place-stats">
+                    <div class="stat-rating">
+                        <span class="star-icon">⭐</span>
+                        <span class="score">4.8</span>
+                        <span class="reviews">(412 reviews)</span>
+                    </div>
+                    <span class="stat-text">1.1 km away</span>
+                    <span class="stat-text">8AM-6PM</span>
+                </div>
+
+                <div class="place-tags">
+                    <span class="tag tag-quiet" style="background-color: #D4A896; color: #6B5444;">Noisy</span>
+                    <span class="tag tag-crowded" style="background-color: #C8D5B9; color: #5A6B4A;">Spacious</span>
+                </div>
+
+                <button class="btn-directions" onclick="window.location.href='hq_map.html'">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3333 6.66667C13.3333 11.3333 8 15.3333 8 15.3333C8 15.3333 2.66666 11.3333 2.66666 6.66667C2.66666 5.25218 3.22857 3.89563 4.22876 2.89543C5.22895 1.89524 6.58551 1.33333 8 1.33333C9.41449 1.33333 10.771 1.89524 11.7712 2.89543C12.7714 3.89563 13.3333 5.25218 13.3333 6.66667Z" stroke="#F5F1EB" stroke-width="1.33278" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 8.66667C9.10457 8.66667 10 7.77124 10 6.66667C10 5.5621 9.10457 4.66667 8 4.66667C6.89543 4.66667 6 5.5621 6 6.66667C6 7.77124 6.89543 8.66667 8 8.66667Z" stroke="#F5F1EB" stroke-width="1.33278" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Get Directions
+                </button>
+            </section>
+
+            <!-- Amenities -->
+            <section class="amenities">
+                <h2>Amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-pill">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16666 10.4167C7.38832 7.19501 12.6117 7.19501 15.8333 10.4167M1.66666 7.5C6.26903 2.89763 13.731 2.89763 18.3333 7.5M6.66666 13.3333C8.50761 11.4924 11.4924 11.4924 13.3333 13.3333M10 16.6667V16.6667" stroke="#5A6B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>WiFi</span>
+                    </div>
+                    <div class="amenity-pill">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.8333 1.66667L2.5 10.8333H9.16667L8.33333 18.3333L16.6667 9.16667H10L10.8333 1.66667Z" stroke="#5A6B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Power Outlets</span>
+                    </div>
+                    <div class="amenity-pill">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.33333" y="3.33333" width="13.3333" height="9.16667" rx="1.66667" stroke="#5A6B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.66666 16.6667H13.3333M10 12.5V16.6667" stroke="#5A6B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Computer Stations</span>
+                    </div>
+                    <div class="amenity-pill">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="4.16667" stroke="#5A6B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 1.66667V3.33333M10 16.6667V18.3333M3.525 3.525L4.70833 4.70833M15.2917 15.2917L16.475 16.475M1.66666 10H3.33333M16.6667 10H18.3333M3.525 16.475L4.70833 15.2917M15.2917 4.70833L16.475 3.525" stroke="#5A6B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>24/7 Access</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews -->
+            <section class="reviews">
+                <div class="reviews-header">
+                    <h2>Reviews (412)</h2>
+                    <a href="univlib_rev.html" class="write-review-btn">Write a Review</a>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-avatar">M</div>
+                    <div class="review-content">
+                        <div class="review-top">
+                            <span class="reviewer-name">Michael T.</span>
+                            <div class="review-meta-tags">
+                                <span class="review-tag rtag-moderate">moderate</span>
+                                <span class="review-tag rtag-comfortable">comfortable</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <span class="review-date">2026-03-01</span>
+                        </div>
+                        <p class="review-text">Best study space in the city. Great atmosphere and amenities!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

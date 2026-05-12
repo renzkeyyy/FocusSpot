@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Spot - Bread & Brew Cafe Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header -->
+        <header class="top-nav">
+            <a href="bnb.html" class="back-button" aria-label="Go back">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8267 9.99584H4.16493" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.99584 15.8292L4.16251 9.99584L9.99584 4.16251" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <h1 class="page-title">MAP</h1>
+        </header>
+
+        <!-- Controls & Legend -->
+        <div class="controls-section">
+            <div class="toggle-buttons">
+                <button class="btn-toggle active">Noise Level</button>
+                <button class="btn-toggle">Crowdedness</button>
+            </div>
+            <div class="legend">
+                <div class="legend-item"><span class="dot dot-quiet"></span>Quiet</div>
+                <div class="legend-item"><span class="dot dot-moderate"></span>Moderate</div>
+                <div class="legend-item"><span class="dot dot-loud"></span>Loud</div>
+            </div>
+        </div>
+
+        <!-- Map Area -->
+        <div class="map-container">
+            <div class="map-grid">
+                <!-- Markers placed by percentage to match grid -->
+                <div class="marker marker-standard marker-green" style="top: 20%; left: 51%;"></div>
+                
+                <div class="marker marker-standard marker-yellow" style="top: 38%; left: 81%;"></div>
+                
+                <!-- Center green dot and route line -->
+                <div class="marker marker-standard marker-green" style="top: 43%; left: 71%;"></div>
+                <div class="route-line" style="top: 43%; left: 71%; height: 50px;"></div>
+                <div class="marker-dot" style="top: 53%; left: 71%;"></div>
+                
+                <!-- User Location -->
+                <div class="marker marker-user" style="top: 60%; left: 11%;">
+                    <div class="marker-core"></div>
+                </div>
+                
+                <!-- Bottom Yellow -->
+                <div class="marker marker-standard marker-yellow" style="top: 68%; left: 30%;"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Info Card -->
+        <div class="info-card">
+            <h2>Bread & Brew Cafe</h2>
+            
+            <div class="info-row">
+                <span class="info-label">Distance</span>
+                <span class="info-value">1.2 km</span>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">Walking time</span>
+                <span class="info-value">~15 minutes</span>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">Noise level</span>
+                <span class="pill pill-quiet">quiet</span>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">Crowdedness</span>
+                <span class="pill pill-empty">empty</span>
+            </div>
+            
+            <button class="btn-navigate">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.6667 1.33333L7.33333 8.66667M14.6667 1.33333L9.33333 14.6667L7.33333 8.66667L1.33333 6.66667L14.6667 1.33333Z" stroke="#F5F1EB" stroke-width="1.33278" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Start Navigation
+            </button>
+        </div>
+    </div>
+</body>
+</html>

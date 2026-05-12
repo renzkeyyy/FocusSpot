@@ -1,0 +1,356 @@
+:root {
+    --bg-color: #f5f1eb;
+    --text-primary: #6b5444;
+    --text-secondary: #9b8674;
+    --border-color: #e8dfd5;
+    
+    --tag-quiet-bg: #c8d5b9;
+    --tag-quiet-text: #5a6b4a;
+    
+    --tag-crowded-bg: #d4a896;
+    --tag-crowded-text: #6b5444;
+    
+    --btn-primary-bg: #6b5444;
+    --btn-primary-text: #f5f1eb;
+    
+    --review-accent: #d4a574;
+    --review-avatar-bg: linear-gradient(to bottom, #d4a574, #b8925f);
+    --review-moderate-bg: #f4e4c1;
+    --review-moderate-text: #8b7355;
+    --review-comfortable-bg: #d4a574;
+    --review-comfortable-text: #5a4436;
+
+    --font-inter: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0dcd5; /* Darker bg for desktop presentation */
+    font-family: var(--font-inter);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--bg-color);
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.top-nav {
+    height: 69px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 40px;
+}
+
+/* Hero Image */
+.hero-image-wrapper {
+    padding: 18px 20px 0;
+}
+
+.hero-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 19px;
+    border: 1px solid var(--text-primary);
+    display: block;
+}
+
+/* Place Info Section */
+.place-info {
+    padding: 16px 20px;
+    position: relative;
+}
+
+.place-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.place-location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 14px;
+}
+
+.place-location span {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    line-height: 20px;
+}
+
+.place-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-primary);
+    line-height: 22.75px;
+    margin-bottom: 16px;
+}
+
+.place-stats {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.stat-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.star-icon {
+    font-size: 14px; /* adjusted for standard emoji size, or could use SVG */
+    line-height: 1;
+}
+
+.score {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.reviews {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.stat-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.place-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.tag {
+    height: 24px;
+    padding: 0 12px;
+    border-radius: 37170400px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.tag-quiet {
+    background-color: var(--tag-quiet-bg);
+    color: var(--tag-quiet-text);
+}
+
+.tag-crowded {
+    background-color: var(--tag-crowded-bg);
+    color: var(--tag-crowded-text);
+}
+
+/* Primary Button */
+.btn-directions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 44px;
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border: 1px solid #5a4436;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-directions:active {
+    opacity: 0.8;
+}
+
+/* Amenities Section */
+.amenities {
+    padding: 24px 20px;
+}
+
+.amenities h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    line-height: 24px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 12px;
+}
+
+.amenity-pill {
+    background-color: var(--tag-quiet-bg);
+    height: 25px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    gap: 12px;
+}
+
+.amenity-pill span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--tag-quiet-text);
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 0 20px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 24px;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.reviews-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.write-review-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--review-accent);
+    text-decoration: none;
+}
+
+.review-card {
+    display: flex;
+    gap: 12px;
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--review-avatar-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f1eb;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--text-primary);
+    flex-shrink: 0;
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.reviewer-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.review-meta-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.review-tag {
+    height: 20px;
+    padding: 0 8px;
+    border-radius: 37170400px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.rtag-moderate {
+    background-color: var(--review-moderate-bg);
+    color: var(--review-moderate-text);
+}
+
+.rtag-comfortable {
+    background-color: var(--review-comfortable-bg);
+    color: var(--review-comfortable-text);
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.stars {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--review-accent);
+}
+
+.review-date {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.review-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 22.75px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Spot - Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="studyall.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header -->
+        <header class="top-nav">
+            <a href="study.html" class="back-button" aria-label="Go back">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8267 9.99584H4.16493" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.99584 15.8292L4.16251 9.99584L9.99584 4.16251" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <h1 class="page-title">Study Methods</h1>
+        </header>
+
+        <!-- Content Area -->
+        <main class="study-content">
+            
+            <!-- Timer Section -->
+            <div class="timer-container">
+                <div class="timer-label">📚 Focus Time</div>
+                <div class="timer-time">25:00</div>
+                <div class="timer-controls">
+                    <button class="btn-timer btn-play" aria-label="Play">
+                        <svg viewBox="0 0 32 32">
+                            <path d="M10 6L26 16L10 26V6Z"></path>
+                        </svg>
+                    </button>
+                    <button class="btn-timer btn-reset" aria-label="Reset">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h2 class="section-title">Choose a Method</h2>
+
+            <!-- Pomodoro Card -->
+            <a href="study_pomo.html" class="method-card active" style="text-decoration: none; color: inherit;">
+                <div class="method-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="13" r="8"></circle>
+                        <path d="M12 9v4l2 2"></path>
+                        <path d="M10 2h4"></path>
+                        <path d="M12 2v3"></path>
+                    </svg>
+                </div>
+                <div class="method-info">
+                    <h3 class="method-title">Pomodoro</h3>
+                    <p class="method-desc">25 min focus, 5 min break</p>
+                </div>
+                <div class="method-check">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 100-18 9 9 0 000 18zm4.707-11.293a1 1 0 00-1.414-1.414L10 13.586 8.707 12.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Extended Focus Card -->
+            <a href="study_ext.html" class="method-card" style="text-decoration: none; color: inherit;">
+                <div class="method-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"></path>
+                        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path>
+                    </svg>
+                </div>
+                <div class="method-info">
+                    <h3 class="method-title">Extended Focus</h3>
+                    <p class="method-desc">50 min focus, 10 min break</p>
+                </div>
+                <div class="method-check">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 100-18 9 9 0 000 18zm4.707-11.293a1 1 0 00-1.414-1.414L10 13.586 8.707 12.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Short Burst Card -->
+            <a href="study_sho.html" class="method-card" style="text-decoration: none; color: inherit;">
+                <div class="method-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                        <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                        <line x1="6" y1="2" x2="6" y2="4"></line>
+                        <line x1="10" y1="2" x2="10" y2="4"></line>
+                        <line x1="14" y1="2" x2="14" y2="4"></line>
+                    </svg>
+                </div>
+                <div class="method-info">
+                    <h3 class="method-title">Short Burst</h3>
+                    <p class="method-desc">15 min focus, 3 min break</p>
+                </div>
+                <div class="method-check">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 100-18 9 9 0 000 18zm4.707-11.293a1 1 0 00-1.414-1.414L10 13.586 8.707 12.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Deep Work Card -->
+            <a href="study_deep.html" class="method-card" style="text-decoration: none; color: inherit;">
+                <div class="method-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                </div>
+                <div class="method-info">
+                    <h3 class="method-title">Deep Work</h3>
+                    <p class="method-desc">90 min focus, 20 min break</p>
+                </div>
+                <div class="method-check">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 100-18 9 9 0 000 18zm4.707-11.293a1 1 0 00-1.414-1.414L10 13.586 8.707 12.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Tip Box -->
+            <div class="tip-box">
+                <p>💡 <strong>Tip:</strong> Select a study method and the timer will automatically alternate between focus and break sessions. Find what works best for your learning style!</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

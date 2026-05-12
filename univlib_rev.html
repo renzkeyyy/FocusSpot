@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Spot - Leave a Review</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="univlib_rev.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header -->
+        <header class="top-nav">
+            <a href="univlib.html" class="back-button" aria-label="Go back">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8267 9.99584H4.16493" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.99584 15.8292L4.16251 9.99584L9.99584 4.16251" stroke="#6B5444" stroke-width="1.66597" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <h1 class="page-title">Leave a Review</h1>
+        </header>
+
+        <!-- Form Form Content -->
+        <form class="form-container" onsubmit="event.preventDefault(); window.location.href='univlib.html';">
+            <div class="form-content">
+                <!-- Location Info -->
+                <div class="card location-card">
+                    <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-6/554870733_747345164960387_736992088781494865_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGKW4igrBDcCOB-IBzWGzFQt9oJTO6o_ze32glM7qj_Nz8ljL0X8OahVlHHxROl3AcNFyy7ClEpGaBGrxIYdgH6&_nc_ohc=euKMZNQt0BAQ7kNvwEoNJMN&_nc_oc=Adq0zl_oVBKNwsblxC5mZFeDIbGq0v-Y8dkbsMTVFCtAcEkhG_m4p7sMqQockHaF1hw&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=pRQtKPR0HiWUa1VTUTek3A&_nc_ss=7b2a8&oh=00_Af6vqjtSxZBzxk5su_elF6zh9YjNXE2vTfTnieDJcbzXqQ&oe=69FDC985 " alt="University Main Library" class="location-img">
+                    <div class="location-info">
+                        <h2 class="location-title">University Main Library</h2>
+                        <p class="location-subtitle">MSU-IIT 2nd Floor</p>
+                    </div>
+                </div>
+
+                <!-- Overall Rating -->
+                <div class="card">
+                    <span class="card-label">Overall Rating</span>
+                    <div class="star-rating" id="star-container">
+                        <button type="button" class="star-btn" data-value="1">
+                            <svg viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg"><path d="M16 1.5L20.635 10.884L31 12.39L23.5 19.701L25.27 30L16 25.116L6.73 30L8.5 19.701L1 12.39L11.365 10.884L16 1.5Z"/></svg>
+                        </button>
+                        <button type="button" class="star-btn" data-value="2">
+                            <svg viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg"><path d="M16 1.5L20.635 10.884L31 12.39L23.5 19.701L25.27 30L16 25.116L6.73 30L8.5 19.701L1 12.39L11.365 10.884L16 1.5Z"/></svg>
+                        </button>
+                        <button type="button" class="star-btn" data-value="3">
+                            <svg viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg"><path d="M16 1.5L20.635 10.884L31 12.39L23.5 19.701L25.27 30L16 25.116L6.73 30L8.5 19.701L1 12.39L11.365 10.884L16 1.5Z"/></svg>
+                        </button>
+                        <button type="button" class="star-btn" data-value="4">
+                            <svg viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg"><path d="M16 1.5L20.635 10.884L31 12.39L23.5 19.701L25.27 30L16 25.116L6.73 30L8.5 19.701L1 12.39L11.365 10.884L16 1.5Z"/></svg>
+                        </button>
+                        <button type="button" class="star-btn" data-value="5">
+                            <svg viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg"><path d="M16 1.5L20.635 10.884L31 12.39L23.5 19.701L25.27 30L16 25.116L6.73 30L8.5 19.701L1 12.39L11.365 10.884L16 1.5Z"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Noise Level -->
+                <div class="card">
+                    <span class="card-label">Noise Level</span>
+                    <div class="toggle-group" id="noise-toggles">
+                        <button type="button" class="toggle-btn">Quiet</button>
+                        <button type="button" class="toggle-btn">Low</button>
+                        <button type="button" class="toggle-btn">Moderate</button>
+                        <button type="button" class="toggle-btn">High</button>
+                        <button type="button" class="toggle-btn">Loud</button>
+                    </div>
+                </div>
+
+                <!-- Crowdedness -->
+                <div class="card">
+                    <span class="card-label">Crowdedness</span>
+                    <div class="toggle-group" id="crowded-toggles">
+                        <button type="button" class="toggle-btn">Empty</button>
+                        <button type="button" class="toggle-btn">Few</button>
+                        <button type="button" class="toggle-btn">Comfy</button>
+                        <button type="button" class="toggle-btn">Busy</button>
+                        <button type="button" class="toggle-btn">Packed</button>
+                    </div>
+                </div>
+
+                <!-- Additional Feedback -->
+                <div class="card">
+                    <span class="card-label">Additional Feedback (Optional)</span>
+                    <textarea class="feedback-textarea" placeholder="Share your thoughts about this study spot..."></textarea>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="bottom-bar">
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Simple interactivity script to make the form feel responsive
+
+        // Star Rating Logic
+        const stars = document.querySelectorAll('.star-btn');
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                stars.forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.add('active');
+                    } else {
+                        s.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Toggle Groups Logic
+        function setupToggleGroup(containerId) {
+            const container = document.getElementById(containerId);
+            const buttons = container.querySelectorAll('.toggle-btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                });
+            });
+        }
+
+        setupToggleGroup('noise-toggles');
+        setupToggleGroup('crowded-toggles');
+    </script>
+</body>
+</html>

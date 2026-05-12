@@ -1,0 +1,292 @@
+:root {
+    --bg-color: #f5f1eb;
+    --text-primary: #6b5444;
+    --text-secondary: #9b8674;
+    --border-color: #e8dfd5;
+    
+    --card-bg: #e8dfd5;
+    --card-border: #9b8674;
+    
+    --icon-bg: #d4a574;
+    --icon-border: #6b5444;
+    
+    --tip-bg: #c8d5b9;
+    --tip-border: #b8c5a9;
+    --tip-text: #5a6b4a;
+
+    --font-inter: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0dcd5; 
+    font-family: var(--font-inter);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--bg-color);
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+/* Header */
+.top-nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.page-title {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-right: 36px;
+}
+
+/* Content Area */
+.study-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Timer Section */
+.timer-container {
+    background-color: var(--card-bg);
+    border: 1px solid #d4c4b4;
+    border-radius: 24px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 4px;
+}
+
+.timer-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.timer-time {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-timer {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-timer:active {
+    transform: scale(0.95);
+}
+
+.btn-timer svg {
+    stroke: #F5F1EB;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.btn-play {
+    background-color: #6b5444;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.btn-play svg {
+    width: 32px;
+    height: 32px;
+    stroke-width: 2.6;
+    margin-left: 4px; /* optical alignment for play icon */
+}
+
+.btn-reset {
+    background-color: #d4a574;
+}
+
+.btn-reset svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+}
+
+/* Method List */
+.section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+/* Method Cards */
+.method-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.1s, opacity 0.2s, background-color 0.2s, border-color 0.2s;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.method-card:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+.method-icon {
+    width: 56px;
+    height: 56px;
+    background-color: var(--icon-bg);
+    border: 1px solid var(--icon-border);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.method-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: #F5F1EB;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.method-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.method-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: color 0.2s;
+}
+
+.method-desc {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.method-check {
+    display: none;
+    flex-shrink: 0;
+}
+
+.method-check svg {
+    width: 24px;
+    height: 24px;
+    fill: #F5F1EB;
+}
+
+/* Active State */
+.method-card.active {
+    background-color: #6b5444;
+    border-color: #9b8674;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.method-card.active .method-icon {
+    background-color: #5a4436;
+    border-color: #6b5444;
+}
+
+.method-card.active .method-title {
+    color: #f5f1eb;
+}
+
+.method-card.active .method-desc {
+    color: #d4c4b4;
+}
+
+.method-card.active .method-check {
+    display: block;
+}
+
+/* Tip Box */
+.tip-box {
+    margin-top: 4px;
+    background-color: var(--tip-bg);
+    border: 1px solid var(--tip-border);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.tip-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--tip-text);
+}
+
+.tip-box strong {
+    font-weight: 700;
+}

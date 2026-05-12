@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Spot - Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400&family=Inter:wght@500;600&family=Instrument+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Main content -->
+        <div class="heading">
+            <h1>Welcome to Focus Spot</h1>
+        </div>
+
+        <div class="tagline">
+            <p>Find your perfect study space</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <form action="homepage.html" method="GET" onsubmit="event.preventDefault(); window.location.href='homepage.html';">
+            <!-- Username field -->
+            <label class="label-username" for="username">Username</label>
+            <input type="text" id="username" name="username" class="input-username">
+
+            <!-- Password field -->
+            <label class="label-password" for="password">Password</label>
+            <input type="password" id="password" name="password" class="input-password">
+
+            <!-- Buttons -->
+            <button type="submit" class="button-login">Log In</button>
+            <button type="button" class="button-create" onclick="window.location.href='create.html';">Create an account</button>
+        </form>
+    </div>
+</body>
+</html>
