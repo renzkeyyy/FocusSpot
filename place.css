@@ -137,7 +137,7 @@ body {
 }
 
 .star-icon {
-    font-size: 14px; /* adjusted for standard emoji size, or could use SVG */
+    font-size: 14px;
     line-height: 1;
 }
 
@@ -147,7 +147,7 @@ body {
     color: var(--text-primary);
 }
 
-.reviews {
+.review-count {
     font-size: 14px;
     font-weight: 400;
     color: var(--text-secondary);
